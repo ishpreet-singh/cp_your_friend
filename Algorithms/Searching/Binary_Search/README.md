@@ -52,7 +52,7 @@ Here's a table showing the base-2 logarithms of various values of **N**:
 |1048576|20|
 
 
-![alt text](https://github.com/ishpreet-singh/Project_X/blob/master/Others/common/binary_search_vs_linear_search.png)
+![alt text](https://github.com/ishpreet-singh/Project_X/blob/master/Others/common/images/binary_search_vs_linear_search.png)
 
 # Useful Resources:
 
