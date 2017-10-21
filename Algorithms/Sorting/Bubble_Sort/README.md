@@ -2,13 +2,15 @@
 
 [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort) is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
 
+`arr` is an array of length `N`
+
 	int* bubble_sort(int arr[], int N)
 	{
 		for(int i=0; i<N-1; i++)
 		{
 			for(int j=0; j<N-i-1; j++)
 			{
-				if(arr[j]>arr[j+1])	//Swap arr[i] with arr[j]
+				if(arr[j]>arr[j+1])	//Swap arr[j] with arr[j+1]
 				{
 					int temp = arr[j];
 					arr[j]=arr[j+1];
@@ -59,6 +61,16 @@ Now, the array is already sorted, but the algorithm does not know if it is compl
 
 [ ![Bubble Sort](https://github.com/ishpreet-singh/Project_X/blob/master/Others/common/images/bubble_sort.png) ](https://www.youtube.com/watch?v=Jdtq5uKz-w4)
 
+
+# Time Complexity
+
+*Best Case*: **O(N)**
+
+*Average Case*: **O(N<sup>2</sup>)**
+
+*Worst Case*: **O(N<sup>2</sup>)**
+
+
 # Practice Problems
 
 * [The Best Player](https://www.hackerearth.com/practice/algorithms/sorting/bubble-sort/practice-problems/algorithm/the-best-player-1/)
@@ -68,5 +80,5 @@ Now, the array is already sorted, but the algorithm does not know if it is compl
 # Usefull Resources
 
 * [Sorting - Khan Academy](https://www.khanacademy.org/computing/computer-science/algorithms/sorting-algorithms/a/sorting)
-* [Sorting - Vizualgo](https://visualgo.net/en/sorting?slide=1)
+* [Sorting - Vizualgo](https://visualgo.net/en/sorting)
 * [Bubble Sort - Geeksforgeeks](http://www.geeksforgeeks.org/bubble-sort/)
