@@ -3,7 +3,6 @@
 [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort) is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
 
 `arr` is an array of length `N`
-
 	int* bubble_sort(int arr[], int N)
 	{
 		for(int i=0; i<N-1; i++)
