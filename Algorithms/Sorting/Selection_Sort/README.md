@@ -54,7 +54,7 @@ In every iteration of selection sort, the minimum element (considering ascending
 
 # Example Video
 
-[ ![Selection Sort](https://github.com/ishpreet-singh/Project_X/blob/master/Others/common/images/bubble_sort.png) ](https://www.youtube.com/watch?v=GUDLRan2DWM)
+[ ![Selection Sort](https://github.com/ishpreet-singh/cp_your_friend/blob/master/Others/common/images/bubble_sort.png) ](https://www.youtube.com/watch?v=GUDLRan2DWM)
 
 # Time Complexity
 

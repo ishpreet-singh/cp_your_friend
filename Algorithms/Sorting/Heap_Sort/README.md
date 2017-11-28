@@ -51,11 +51,11 @@ Consider an array `Arr` of length `N` which is to be sorted using Heap Sort.
 
 In the diagram below,initially there is an unsorted array Arr having 6 elements and then max-heap will be built.
 
-![Heap Sort](https://github.com/ishpreet-singh/Project_X/blob/master/Others/common/images/heap_sort_implementation.jpg)
+![Heap Sort](https://github.com/ishpreet-singh/cp_your_friend/blob/master/Others/common/images/heap_sort_implementation.jpg)
 
 After building max-heap, the elements in the array Arr will be:
 
-![Heap Sort](https://github.com/ishpreet-singh/Project_X/blob/master/Others/common/images/heap_sort_initial_array.jpg)
+![Heap Sort](https://github.com/ishpreet-singh/cp_your_friend/blob/master/Others/common/images/heap_sort_initial_array.jpg)
 
 * **Step 1**: 8 is swapped with 5.
 * **Step 2**: 8 is disconnected from heap as 8 is in correct position now and.
@@ -68,15 +68,15 @@ After building max-heap, the elements in the array Arr will be:
 * **Step 9**: Max heap is created and 3 is swapped with 1.
 * **Step 10**: 3 is disconnected.
 
-![Heap Sort](https://github.com/ishpreet-singh/Project_X/blob/master/Others/common/images/heap_sort_explaination.jpg)
+![Heap Sort](https://github.com/ishpreet-singh/cp_your_friend/blob/master/Others/common/images/heap_sort_explaination.jpg)
 
 After all the steps, we will get a sorted array.
 
-![Heap Sort](https://github.com/ishpreet-singh/Project_X/blob/master/Others/common/images/heap_sort_final_array.jpg)
+![Heap Sort](https://github.com/ishpreet-singh/cp_your_friend/blob/master/Others/common/images/heap_sort_final_array.jpg)
 
 # Example Video
 
-[ ![Heap Sort](https://github.com/ishpreet-singh/Project_X/blob/master/Others/common/images/bubble_sort.png) ](https://www.youtube.com/watch?v=PqS5T9ZKZno)
+[ ![Heap Sort](https://github.com/ishpreet-singh/cp_your_friend/blob/master/Others/common/images/bubble_sort.png) ](https://www.youtube.com/watch?v=PqS5T9ZKZno)
 
 # Time Complexity
 

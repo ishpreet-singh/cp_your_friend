@@ -33,7 +33,7 @@ It reduces the space complexity and removes the use of the auxiliary array that 
 
 # Implementation
 
-![Merge Sort](https://github.com/ishpreet-singh/Project_X/blob/master/Others/common/images/quick_sort.jpg)
+![Merge Sort](https://github.com/ishpreet-singh/cp_your_friend/blob/master/Others/common/images/quick_sort.jpg)
 
 You have an array `A=[9,7,8,3,2,1]` Observe in the diagram above, that the **randpartition()** function chooses pivot randomly as 7 and then swaps it with the first element of the array and then the **partition()** function call takes place, which divides the array into two halves. The first half has elements less than 7 and the other half has elements greater than 7. 
 
@@ -51,7 +51,7 @@ Let’s see the randomized version of the partition function :
 
 # Example Video
 
-[ ![Merge Sort](https://github.com/ishpreet-singh/Project_X/blob/master/Others/common/images/bubble_sort.png) ](https://www.youtube.com/watch?v=COk73cpQbFQ)
+[ ![Merge Sort](https://github.com/ishpreet-singh/cp_your_friend/blob/master/Others/common/images/bubble_sort.png) ](https://www.youtube.com/watch?v=COk73cpQbFQ)
 
 # Time Complexity
 

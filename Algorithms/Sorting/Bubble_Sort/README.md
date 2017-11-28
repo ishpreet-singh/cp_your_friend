@@ -59,7 +59,7 @@ Now, the array is already sorted, but the algorithm does not know if it is compl
 
 # Example Video
 
-[ ![Bubble Sort](https://github.com/ishpreet-singh/Project_X/blob/master/Others/common/images/bubble_sort.png) ](https://www.youtube.com/watch?v=Jdtq5uKz-w4)
+[ ![Bubble Sort](https://github.com/ishpreet-singh/cp_your_friend/blob/master/Others/common/images/bubble_sort.png) ](https://www.youtube.com/watch?v=Jdtq5uKz-w4)
 
 
 # Time Complexity

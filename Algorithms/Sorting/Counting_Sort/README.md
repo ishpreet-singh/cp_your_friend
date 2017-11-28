@@ -52,7 +52,7 @@ After applying the counting sort algorithm, Arr[] will be **{2,2,3,5,5,5,9}**
 
 # Example Video
 
-[ ![Counting Sort](https://github.com/ishpreet-singh/Project_X/blob/master/Others/common/images/bubble_sort.png) ](https://www.youtube.com/watch?v=TTnvXY82dtM)
+[ ![Counting Sort](https://github.com/ishpreet-singh/cp_your_friend/blob/master/Others/common/images/bubble_sort.png) ](https://www.youtube.com/watch?v=TTnvXY82dtM)
 
 
 # Time Complexity

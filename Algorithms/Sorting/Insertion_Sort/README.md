@@ -27,11 +27,11 @@ If the current element is greater, then it leaves the element in its place and m
 
 Let **arr** be [**7,4,5,2**]
 
-![Insertion_sort](https://github.com/ishpreet-singh/Project_X/blob/master/Others/common/images/insertion_sort.png)
+![Insertion_sort](https://github.com/ishpreet-singh/cp_your_friend/blob/master/Others/common/images/insertion_sort.png)
 
 # Example Video
 
-[ ![Insertion Sort](https://github.com/ishpreet-singh/Project_X/blob/master/Others/common/images/bubble_sort.png) ](https://www.youtube.com/watch?v=i-SKeOcBwko)
+[ ![Insertion Sort](https://github.com/ishpreet-singh/cp_your_friend/blob/master/Others/common/images/bubble_sort.png) ](https://www.youtube.com/watch?v=i-SKeOcBwko)
 
 # Time Complexity
 

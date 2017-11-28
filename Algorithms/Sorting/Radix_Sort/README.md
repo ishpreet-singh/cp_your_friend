@@ -54,7 +54,7 @@ Let's assume that, array arr of size n needs to be sorted.
 
 # Example Video
 
-[ ![Radix Sort](https://github.com/ishpreet-singh/Project_X/blob/master/Others/common/images/bubble_sort.png) ](https://www.youtube.com/watch?v=YXFI4osELGU)
+[ ![Radix Sort](https://github.com/ishpreet-singh/cp_your_friend/blob/master/Others/common/images/bubble_sort.png) ](https://www.youtube.com/watch?v=YXFI4osELGU)
 
 
 # Time Complexity

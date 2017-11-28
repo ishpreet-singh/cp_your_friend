@@ -42,7 +42,7 @@
 * Take adjacent pairs of two singleton lists and merge them to form a list of 2 elements. N will now convert into N/2 lists of size 2.
 * Repeat the process till a single sorted list of obtained
 
-![Merge Sort](https://github.com/ishpreet-singh/Project_X/blob/master/Others/common/images/merge_sort.jpg)
+![Merge Sort](https://github.com/ishpreet-singh/cp_your_friend/blob/master/Others/common/images/merge_sort.jpg)
 
 As one may understand from the image above, at each step a list of size M is being divided into 2 sublists of size M/2, until no further division can be done. To understand better, consider a smaller array A containing the elements (9,7,8).
 
@@ -53,7 +53,7 @@ As no further breakdown of this list can be done, as each sublist consists of a 
 
 # Example Video
 
-[ ![Merge Sort](https://github.com/ishpreet-singh/Project_X/blob/master/Others/common/images/bubble_sort.png) ](https://www.youtube.com/watch?v=TzeBrDU-JaY)
+[ ![Merge Sort](https://github.com/ishpreet-singh/cp_your_friend/blob/master/Others/common/images/bubble_sort.png) ](https://www.youtube.com/watch?v=TzeBrDU-JaY)
 
 
 # Time Complexity
