@@ -36,7 +36,7 @@
 
 # Implementation
 
-**Concept:
+**Concept**:
 
 * Divide the unsorted list into N sublists, each containing 1 element.
 * Take adjacent pairs of two singleton lists and merge them to form a list of 2 elements. N will now convert into N/2 lists of size 2.
