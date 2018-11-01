@@ -1,6 +1,7 @@
 /*
     Nitesh
     nitesh.cse14@nituk.ac.in
+    Backend Developer at Codalien
 */
 
 import java.util.*;
@@ -8,6 +9,7 @@ import java.io.*;
 
 class Solve {
 
+    // Contructor
     public Solve() {
         //do something
     }
@@ -29,7 +31,9 @@ class Solve {
             isSubsetSum_recursive(inp, n - 1, sum - inp[n - 1]);
     }
 
-    //dp solution
+    // dp solution
+    // Time complexity O(n * sum)
+    // Space complexity O(n * sum)
     boolean isSubsetSum_dp(int inp[], int n, int sum) {
         // initialise an array
         boolean dp[][] = new boolean[sum + 1][n + 1];
@@ -51,6 +55,39 @@ class Solve {
                 if (i >= inp[j - 1]) {
                     dp[i][j] = dp[i][j] || dp[i - inp[j - 1]][j - 1];
                 }
+            }
+        }
+
+        return dp[sum][n];
+    }
+
+
+    // dp solution
+    // Time complexity O(n * sum)
+    // Space complexity O(n * sum)
+    boolean isSubsetSum_dp_(int inp[], int n, int sum) {
+        // The value of subset[i][j] will be
+        // true if there is a subset of
+        // set[0..j-1] with sum equal to i
+        boolean dp[][] = new boolean[sum+1][n+1];
+
+        // If sum is 0, then answer is true
+        for (int i = 0; i <= n; i++)
+            dp[0][i] = true;
+
+        // If sum is not 0 and set is empty,
+        // then answer is false
+        for (int i = 1; i <= sum; i++)
+            dp[i][0] = false;
+
+        for (int i = 1; i <= sum; i++) {
+            for (int j = 1; j <= n; j++) {
+
+                dp[i][j] = dp[i][j - 1];
+
+                if (i >= set[j - 1])
+                    dp[i][j] = dp[i][j] ||
+                            dp[i - set[j - 1]][j - 1];
             }
         }
 
@@ -81,14 +118,17 @@ public class SubsetSum {
             //class object initialisation
 
             Solve solve1 = new Solve();
-
             Solve solve2 = new Solve();
+            Solve solve3 = new Solve();
 
             //recursive solution output
             System.out.println(solve1.isSubsetSum_recursive(inp, n, sum) ? "True" : "False");
 
-            //dp solution output
+            //dp solution output with Space O(n * sum)
             System.out.println(solve2.isSubsetSum_dp(inp, n, sum) ? "True" : "False");
+
+            //dp solution output with Space O(sum)
+            System.out.println(solve3.isSubsetSum_dp_(inp, n, sum) ? "True" : "False");
 
         } catch (Exception ex) {
             System.out.println(ex);
