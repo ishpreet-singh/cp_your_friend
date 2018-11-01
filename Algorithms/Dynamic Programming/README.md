@@ -51,17 +51,3 @@ Using Dynamic Programming approach with memoization:
     }
 ```
 [click for full code link]()
-
-input#file {
-  display: inline-block;
-  width: 100%;
-  padding: 120px 0 0 0;
-  height: 100px;
-  overflow: hidden;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background: url('http://archisnapper.com/cloud.png') center center no-repeat #e4e4e4;
-  border-radius: 20px;
-  background-size: 150px 100px;
-}
