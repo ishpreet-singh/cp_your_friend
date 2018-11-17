@@ -1,4 +1,9 @@
-**cp_your_friend** is One stop solution for Data Structures, Algorithms and all competitive programming related topics.
+# Cp Your Friend 
+is One stop solution for Data Structures, Algorithms and all competitive programming related topics.
+
+_Currently Under Constrcution_
+
+![alt text](http://pngimg.com/uploads/under_construction/under_construction_PNG37.png "Currently Under Cnnstruction")
 
 Here's the list of algorithms:
 
@@ -18,3 +23,11 @@ Here's the list of algorithms:
   * [Selction Sort](https://github.com/ishpreet-singh/cp_your_friend/tree/master/Algorithms/Sorting/Selection_Sort)
 
 
+# To Dos
+
+* Greedy Algorithms
+* Dynamic Programming
+* String Search Algorithms
+* Graphs 
+* Data Structures
+* Mathematics Algorithms
