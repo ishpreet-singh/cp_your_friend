@@ -1,0 +1,106 @@
+<h1>Tutorial For Dynamic Programming Begginer to Advance</h1>
+<ol>
+<li><a href="">Introduction</a></li>
+<li><a href="https://www.quora.com/What-is-the-difference-between-dynamic-programming-and-recursion">Recursion and Dynamic Programming</a></li>
+<li><a href="">Some examples with solution</a></li>
+</ol>
+<h2>Introduction</h2>
+<p>Dynamic programming (usually referred to as DP ) is a very powerful technique to solve a particular class of problems. Dynamic programming amounts to breaking down an optimization problem into simpler sub-problems, and storing the solution to each sub-problem so that each sub-problem is only solved once.</p>
+<p>There are two ways of doing this.</p>
+<h3>1.) Top-Down :</h3>
+<p>Start solving the given problem by breaking it down. If you see that the problem has been solved already, then just return the saved answer. If it has not been solved, solve it and save the answer. This is usually easy to think of and very intuitive. This is referred to as Memoization.</p>
+<h3>2.) Bottom-Up :</h3>
+<p>Analyze the problem and see the order in which the sub-problems are solved and start solving from the trivial subproblem, up towards the given problem. In this process, it is guaranteed that the subproblems are solved before solving the problem. This is referred to as Dynamic Programming.</p>
+<h3>Fibbonaci Series :</h3>
+<p>Let's try to understand this by taking an example of Fibonacci numbers.</p>
+<pre><code>Fibonacci (n) = 1; if n = 0
+Fibonacci (n) = 1; if n = 1
+Fibonacci (n) = Fibonacci(n-1) + Fibonacci(n-2)
+</code></pre>
+<p>So, the first few numbers in this series will be: 1, 1, 2, 3, 5, 8, 13, 21... and so on!</p>
+<p>A code for it using pure recursion:</p>
+<p><code>cpp
+    int fib (int n) {
+        if (n &lt; 2)
+            return 1;
+        return fib(n - 1) + fib(n - 2);
+    }</code></p>
+<p>Using Dynamic Programming approach with memoization:
+<code>cpp
+    void fib () {
+        fib_result[0] = 1;
+        fib_result[1] = 1;
+        for (int i = 2; i &lt; n; ++i)
+           fib_result[i] = fib_result[i - 1] + fib_result[i - 2];
+    }</code>
+Space optimization:
+<code>cpp
+    int fib(int n) { 
+      int a = 0, b = 1, c; 
+      if( n == 0) 
+        return a; 
+      for (int i = 2; i &lt;= n; i++) { 
+         c = a + b; 
+         a = b; 
+         b = c; 
+      } 
+      return b; 
+    }</code></p>
+<p>Using power of the matrix
+<a href="https://math.stackexchange.com/questions/784710/how-to-prove-fibonacci-sequence-with-matrices">go for reference</a></p>
+<h2>Longest Common Subsequence</h2>
+<p>Given two sequences, find the length of longest subsequence present in both of them.
+A subsequence is a sequence that appears in the same relative order, but not necessarily contiguous</p>
+<p>We are given two strings: string S of length n, and string T of length m. Our goal is to produce their longest
+common subsequence: the longest sequence of characters that appear left-to-right (but not necessarily
+in a contiguous block) in both strings.
+For example, consider:</p>
+<p>S = ABAZDC
+T = BACBAD</p>
+<p>In this case, the LCS has length 4 and is the string ABAD. Another way to look at it is we are finding
+a 1-1 matching between some of the letters in S and some of the letters in T such that none of the
+edges in the matching cross each other</p>
+<h4>producer :</h4>
+<p>let LCS[i,j] is the length of the LCS of S[1..i] with T[1..j]. How
+can we solve for LCS[i,j] in terms of the LCS’s of the smaller problems?</p>
+<p><b><code>Case 1:</code></b>     what if S[i] 6= T[j]? Then, the desired subsequence has to ignore one of S[i] or T[j] so we
+have:
+LCS[i, j] = max(LCS[i − 1, j], LCS[i, j − 1]).</p>
+<p><b><code>Case 2:</code></b>     what if S[i] = T[j]? Then the LCS of S[1..i] and T[1..j] might as well match them up.
+For instance, if I gave you a common subsequence that matched S[i] to an earlier location in
+T, for instance, you could always match it to T[j] instead. So, in this case we have:
+LCS[i, j] = 1 + LCS[i − 1, j − 1].</p>
+<h5>Computing the length of the LCS</h5>
+<p>The function below takes as input sequences <code>X[1..m]</code> and <code>Y[1..n]</code>, 
+computes the LCS between <code>X[1..i]</code> and <code>Y[1..j]</code> for all <code>1 ≤ i ≤ m</code> and <code>1 ≤ j ≤ n</code>, and stores it in <code>C[i,j]</code>. <code>C[m,n]</code> will contain the length of the LCS of <code>X</code> and <code>Y</code>.</p>
+<p><code>c
+ function LCSLength(X[1..m], Y[1..n])
+      C = array(0..m, 0..n)
+        for i := 0..m
+         C[i,0] = 0
+         for j := 0..n
+         C[0,j] = 0
+         for i := 1..m
+             for j := 1..n
+                if X[i] = Y[j]
+                  C[i,j] := C[i-1,j-1] + 1
+                else
+                  C[i,j] := max(C[i,j-1], C[i-1,j])
+      return C[m,n]</code>
+ Let <math>S</math> be <code>XMJYAUZ</code> and <math>T</math> be <code>MZJAWXU</code>.
+ The longest common subsequence between <math>S</math> and <math>T</math> is <code>MJAU</code>.
+ The table <code>C</code> shown below, which is generated by the function <code>LCSLength</code>, 
+ shows the lengths of the longest common subsequences between prefixes of <math>S</math> and <math>T</math>. 
+ The <math>i</math>th row and <math>j</math>th column shows the length of the LCS between <math>S_{1..i}</math> and <math>T_{1..j}</math>.
+ #### let Example
+ |<p></p>|<p></p>|<strong>0</strong>|<strong>1</strong>|<strong>2</strong>|<strong>3</strong>|<strong>4</strong>|<strong>5</strong>|<strong>6</strong>|<strong>7</strong>|
+ |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+ |<p></p>|<p></p>|<strong>Ø</strong>|<strong>M</strong>|<strong>Z</strong>|<strong>J</strong>|<strong>A</strong>|<strong>W</strong>|<strong>X</strong>|<strong>U</strong>|
+ |<strong>0</strong>|<strong>Ø</strong>|0|0|0|0|0|0|0|0|
+ |<strong>1</strong>|<strong>X</strong>|0|0|0|0|0|0|1|1|
+ |<strong>2</strong>|<strong>M</strong>|0|1|1|1|1|1|1|1|
+ |<strong>3</strong>|<strong>J</strong>|0|1|1|2|2|2|2|2|
+ |<strong>4</strong>|<strong>Y</strong>|0|1|1|2|2|2|2|2|
+ |<strong>5</strong>|<strong>A</strong>|0|1|1|2|3|3|3|3|
+ |<strong>6</strong>|<strong>U</strong>|0|1|1|2|3|3|3|4|
+ |<strong>7</strong>|<strong>Z</strong>|0|1|1|2|3|3|3|4|</p>
