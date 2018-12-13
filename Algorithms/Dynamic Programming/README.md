@@ -159,6 +159,8 @@ computes the LCS between <code>X[1..i]</code> and <code>Y[1..j]</code> for all <
  |**5**|**A**|0|1|1|2|&#8598;3|&#8592;3|&#8592;3|3|
  |**6**|**U**|0|1|1|2|3|3|3|&#8598;4|
  |**7**|**Z**|0|1|1|2|3|3|3|&#8593;4|
+ 
+ 
  The <span style="background: yellow">highlighted</span> numbers show the path the function 
  <code>backtrack</code> would follow from the bottom right to the top left corner, 
  when reading out an LCS. If the current symbols in <math>S</math> and <math>T</math> are equal, 
